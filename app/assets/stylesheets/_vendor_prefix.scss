@@ -1,5 +1,7 @@
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: block;
+$prefixes: -webkit-, -moz-, -ms-, -o-, '';
+
+@mixin flexbox {
+  @each $prefix in $prefixes {
+    display: #{$prefix}flex;
+  }
 }

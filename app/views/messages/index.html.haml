@@ -1,5 +1,5 @@
 .wrapper
-  = render "side_bar"
+  = render 'side_bar'
 
   .chat
     .header
@@ -11,15 +11,25 @@
           メンバー名
         %li.member
           メンバー名
-    .right-header
-      .right-header__button
-        Edit
+      .right-header
+        .right-header__button
+          Edit
     .messages
       .message
         .upper-message
           .upper-message__user-name
             メンバー
           .upper-message__date
+            2019/12/29
+        .lower-message
+          .lower-message__content
+            メッセージ
+      .message
+        .upper-message
+          .upper-message__user-name
+            メンバー
+          .upper-message__date
+            2019/12/29
         .lower-message
           .lower-message__content
             メッセージ
