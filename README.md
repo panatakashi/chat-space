@@ -13,9 +13,11 @@
 |------|----|-------|
 |name|string|null: false|
 ### Association
-- has_many :users, through: :groups_users
-- has_many :messages
 - has_many :groups_users
+- has_many :messages
+- has_many :users, through: :groups_users
+
+
 
 ## messagesテーブル
 |Column|Type|Options|
@@ -25,7 +27,7 @@
 |user|references|foreign_key: true|
 |group|references|foreign_key: true|
 ### Association
-- belomgs_to :group
+- belongs_to :group
 - belongs_to :user
 
 ## groups_usersテーブル
