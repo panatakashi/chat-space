@@ -4,8 +4,6 @@
     box-sizing: border-box;
     height: 100px;
     padding: 0 40px;
-    border-bottom: solid 1px #eee;
-    
     .left-header {
       float: left;
       &__title {
@@ -25,9 +23,9 @@
       }
     }
     .right-header {
-      border: 1px solid #38aef0;
-      color: #38aef0;
-      float: right; 
+      border: 1px solid $light_blue;
+      color: $light_blue;
+      float: right;
       height: 40px;
       line-height: 40px;
       margin-top: 28px;
@@ -45,7 +43,7 @@
       .upper-message {
         display: flex;
         &__user-name {
-          color: #333333;
+          color: #434a54;
           font-size: 16px;
           font-weight: bold;
         }
@@ -66,7 +64,6 @@
     }
   }
 
-
   .form {
     background-color: #DDDDDD;
     box-sizing: border-box;
@@ -76,10 +73,10 @@
       border: none;
       float: left;
       height: 50px;
-      width: calc(100% - 100px);
+      width: calc(100% - 150px);
     }
     &__mask {
-      background-color: #ffffff;
+      background-color: $white;
       float: left;
       height: 50px;
       padding-right: 10px;
@@ -92,9 +89,9 @@
       }
     }
     &__submit {
-      background-color: #38aef0;
+      background-color: $light_blue;
       border: none;
-      color: #ffffff;
+      color: $white;
       float: right;
       font-size: 16px;
       height: 50px;
